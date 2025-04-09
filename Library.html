@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ đồ tổ chức</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+        }
+        .card {
+            border: none;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+            perspective: 1000px;
+        }
+        .card:hover {
+            transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+        .line {
+            width: 3px;
+            background: #000;
+            height: 30px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🚀 NAVBAR - THANH MENU CHÍNH -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trang Chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Library.html">Sơ đồ tổ chức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🔹 SƠ ĐỒ TỔ CHỨC -->
+    <div class="container text-center mt-5">
+        <h2 class="mb-4">Sơ đồ tổ chức</h2>
+        
+        <div class="d-flex justify-content-center mb-3">
+            <div class="card p-3 bg-primary text-white" style="width: 250px;">
+                <h5 class="card-title">Ban Giám Hiệu</h5>
+                <p class="card-text">Chịu trách nhiệm quản lý toàn bộ hoạt động của tổ chức.</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="card p-3 bg-success text-white" style="width: 220px;">
+                    <h5 class="card-title">Phòng Hành Chính</h5>
+                    <p class="card-text">Quản lý nhân sự, hành chính và các vấn đề pháp lý.</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="card p-3 bg-info text-white" style="width: 220px;">
+                    <h5 class="card-title">Phòng Đào Tạo</h5>
+                    <p class="card-text">Xây dựng và quản lý chương trình đào tạo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="line mt-3"></div>
+        
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="card p-3 bg-warning text-dark" style="width: 220px;">
+                    <h5 class="card-title">Phòng Kế Toán</h5>
+                    <p class="card-text">Quản lý tài chính, ngân sách và báo cáo tài chính.</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="card p-3 bg-danger text-white" style="width: 220px;">
+                    <h5 class="card-title">Phòng Kinh Doanh</h5>
+                    <p class="card-text">Phát triển chiến lược kinh doanh và tiếp thị.</p>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <div class="card p-3 bg-secondary text-white" style="width: 220px;">
+                    <h5 class="card-title">Phòng Công Nghệ</h5>
+                    <p class="card-text">Quản lý hạ tầng IT và phát triển công nghệ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
